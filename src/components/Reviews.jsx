@@ -47,7 +47,7 @@ const Reviews = () => {
     lg:items-start xl:px-52 xl:mt-72">
        <div className="flex items-center justify-start w-full mb-2 md:w-[60%] lg:w-[50%]">
           <p className="text-[15px] mt-1 md:mt-2 md:text-[19px] lg:text-[20px] xl:mt-1">
-              03.
+              04.
           </p>
           <p className="text-[23px] font-medium ml-2 whitespace-nowrap text-[#C4C4C4] md:text-[27px] md:font-bold lg:text-[28px]">
               Testimonials
