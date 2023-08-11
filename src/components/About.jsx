@@ -77,7 +77,7 @@ const About = () => {
         
             </div>
 
-            <p className='text-[13px] font-medium text-[#74aabc] underline xl:mt-6'>
+            <p className='text-[13px] font-medium text-[#ba7cf7] underline xl:mt-6'>
                 And a whole lot more
             </p>
         </div>

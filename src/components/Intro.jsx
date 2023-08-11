@@ -2,8 +2,16 @@ import { FiGithub } from 'react-icons/fi'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { RiTwitterLine } from 'react-icons/ri'
 import { FaInstagram } from 'react-icons/fa'
+import { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Intro = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="poppins flex flex-col items-start justify-end w-full px-8 mt-56 md:px-14 md:w-[85%] lg:w-full lg:px-24 lg:mt-36 xl:px-52 xl:mt-32">
         <p className="text-[17px] text-[#C4C4C4] font-light mb-1 md:font-medium md:mb-2 md:text-[18px] lg:mb-1">

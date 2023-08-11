@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import bwecImg from '../assets/bwecImg.png'
 import bwecLogo from '../assets/bwecLogo.png'
 import alphaImg from '../assets/alphaImg.png'
@@ -10,6 +10,8 @@ import padiLogo from '../assets/padiLogo.png'
 import whatsappImg from '../assets/whatsappImg.png'
 import whatsappLogo from '../assets/whatsappLogo.png'
 import { IoIosArrowForward } from 'react-icons/io'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -22,6 +24,11 @@ const Projects = () => {
         setIsHovered(false)
     }
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     const items = [
         {
             id: 1,
@@ -30,7 +37,10 @@ const Projects = () => {
             proLogoStyle: 'absolute h-56 w-[100%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#c5c3c3] rounded-[20px]',
             proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: '#'
+            proLink: '#',
+            aos: 'fade-right',
+            offset: "100", 
+            easing: "ease-in-sine"
         },
         {
             id: 2,
@@ -39,7 +49,10 @@ const Projects = () => {
             proLogoStyle: 'absolute h-56 w-[75%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#1d1d4e] rounded-[20px]',
             proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: 'https://www.chinadojo.org/'
+            proLink: 'https://www.chinadojo.org/',
+            aos: 'fade-left',
+            offset: "150", 
+            easing: "ease-in-sine"
         },
         {
             id: 3,
@@ -48,7 +61,10 @@ const Projects = () => {
             proLogoStyle: 'absolute h-56 w-[60%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#4c4429] rounded-[20px]',
             proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: 'https://www.padicash.io/'
+            proLink: 'https://www.padicash.io/',
+            aos: 'fade-right',
+            offset: "100", 
+            easing: "ease-in-sine"
         },
         {
             id: 4,
@@ -57,7 +73,10 @@ const Projects = () => {
             proLogoStyle: 'absolute h-56 w-[70%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#182862] rounded-[20px]',
             proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: 'https://www.bloomingwells.org/'
+            proLink: 'https://www.bloomingwells.org/',
+            aos: 'fade-left',
+            offset: "150", 
+            easing: "ease-in-sine"
         },
         {
             id: 5,
@@ -66,7 +85,10 @@ const Projects = () => {
             proLogoStyle: 'absolute h-56 w-[45%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#294522] rounded-[20px]',
             proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: 'https://whatsapp-tobiloba007.vercel.app/'
+            proLink: 'https://whatsapp-tobiloba007.vercel.app/',
+            aos: 'fade-right',
+            offset: "100", 
+            easing: "ease-in-sine"
         },
     ]
 
@@ -91,13 +113,17 @@ const Projects = () => {
                               {/* PROJECT ITEM */}
                     {items.map((item) => {
                         return(
-                    <div key={item.id} className="flex flex-col items-center justify-center w-full rounded-[20px] my-3 md:my-4 md:w-[47%] lg:w-[48%] xl:w-[47%] xl:my-8"
+                    <div key={item.id}
+                    className="flex flex-col items-center justify-center w-full rounded-[20px] my-3 md:my-4 md:w-[47%] lg:w-[48%] xl:w-[47%] xl:my-8"
+                    data-aos= {item.aos}
+                    data-aos-offset={item.offset}
+                    data-aos-easing={item.easing}
                     onMouseEnter={() => handleHoverEnter(item.id)}
                     onMouseLeave={handleHoverLeave}
                     >
                         {
                             isHovered === item.id
-                         ? <div className="relative flex items-center justify-center w-full h-64 bg-[#223a44] rounded-[20px] px-7 md:h-72">
+                         ? <div className="relative flex items-center justify-center w-full h-64 bg-[#223a44] rounded-[20px] border-[1px] border-[#9c38ff] px-7 md:h-72">
                              <div className='flex flex-col items-center justify-center w-full'>
                                  <p className='text-center text-base xl:text-lg'>
                                     {item.proIntro}

@@ -65,6 +65,7 @@ const Reviews = () => {
         <Swiper
         effect={'cards'}
         grabCursor={true}
+        loop={true}
         modules={[EffectCards]}
         className="flex items-start justify-center w-[90%] h-96 md:w-[50vw] lg:w-[40vw] lg:h-[28rem] xl:w-[35vw] xl:h-[35rem]"
       >

@@ -4,12 +4,7 @@ import { IoLocationSharp } from 'react-icons/io5'
 import logo from '../assets/companyLogo.png'
 
 const Experience = () => {
-  const [isExpanded, setIsExpanded] = useState(null);
-
-  // const handleOpen = (item.id) => {
-  //   setIsExpanded(isExpanded === item.id ? !isExpanded : null );
-  // };
-
+  const [isExpanded, setIsExpanded] = useState(true);
 
   const items = [
     {
@@ -36,7 +31,7 @@ const Experience = () => {
   ]
 
   return (
-    <div className='flex flex-col items-center justify-start w-full px-8 my-24 md:px-14 lg:px-24 xl:px-52'>
+    <div className='flex flex-col items-center justify-start w-full px-8 my-24 md:px-14 md:mt-36 lg:px-24 xl:px-52 xl:mt-72'>
       <div className='flex items-center justify-start w-full'>
         <div className="flex items-center justify-start w-full mb-2 md:w-[60%] lg:w-[50%]">
           <p className="text-[15px] mt-1 md:mt-2 md:text-[19px] lg:text-[20px] xl:mt-1">
@@ -54,7 +49,7 @@ const Experience = () => {
         {items.map((item)=>{
           return(
         <div key={item.id} className='flex flex-col items-center justify-start w-full my-3'>
-             <div className="flex items-center justify-between w-full rounded-md bg-[#74aabc] h-14 px-3 md:px-7">
+             <div className="flex items-center justify-between w-full rounded-md bg-[#438297] border-[0.08em] border-[#9c38ff] h-14 px-3 md:px-7">
                <p className="text-white text-sm text font-semibold md:text-base xl:text-lg">
                  {item.title}
                </p>
@@ -77,7 +72,7 @@ const Experience = () => {
                <div className='flex flex-col items-start justify-center w-full bg-[#3d4f55] px-5 py-6 rounded-md mt-5 md:px-8 xl:px-12'>
                 <img className='w-24' src={logo} alt="..." />
                 <div className='flex items-center justify-start w-full'>
-                  <IoLocationSharp className='text-[#74aabc] text-xl' />
+                  <IoLocationSharp className='text-[#ae63f9] text-2xl' />
                   <p className='pl-1 text-sm text-[#C4C4C4] md:text-base'>
                     Lekki, Lagos
                   </p>
