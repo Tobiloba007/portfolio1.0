@@ -1,14 +1,14 @@
 import { FiGithub } from 'react-icons/fi'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { RiTwitterLine } from 'react-icons/ri'
-import { FaInstagram } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 const Intro = () => {
 
   return (
-    <div className="poppins flex flex-col items-start justify-end w-full px-8 mt-56 md:px-14 md:w-[85%] lg:w-full lg:px-24 lg:mt-36 xl:px-52 xl:mt-32">
-        <p className="text-[17px] text-[#C4C4C4] font-light mb-1 md:font-medium md:mb-2 md:text-[18px] lg:mb-1">
+    <div className="poppins flex flex-col items-start justify-end w-full px-8 mt-56 md:px-14 md:w-[85%] lg:w-full lg:px-24 lg:mt-40 xl:px-52 xl:mt-48">
+        <p className="text-[14px] text-[#C4C4C4] font-light mb-1 md:font-light md:mb-2 md:text-[16px] lg:mb-1">
             Hi, my name is
         </p>
         <h1 className="poppins text-[38px] font-[800] tracking-wider mb-1 bg-gradient-to-r from-[#9c38ff] to-[#74aabc] text-transparent bg-clip-text
@@ -19,55 +19,64 @@ const Intro = () => {
         lg:leading-[3.6rem] xl:text-[60px] xl:leading-[4rem] xl:font-[700]">
           I build amazing things for the web.
         </p>
-        <p className="text-[15px] font-normal leading-6 text-[#C4C4C4] md:text-[16px] lg:text-[16px] lg:w-[70%] xl:w-[60%] xl:text-[18px] xl:leading-7">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, assumenda omnis aut et dolore minus harum aliquam, earum mollitia unde vero quos, sapiente modi repellendus nihil. Illum, provident brilliant!
+        <p className="text-[13px] font-normal leading-5 text-[#C4C4C4] md:text-[15px] md:leading-6 lg:text-[16px] lg:w-[65%] xl:w-[60%] xl:text-[18px] xl:leading-8">
+            I am a passionate front-end developer with love for creating visually appealing and user-friendly websites. <br /> 
+            My journey began with the excitement of bringing designs to life through code, and I&apos;ve been hooked ever since.
         </p>
 
         <div className="w-full mt-12 lg:hidden">
           <div className="flex items-start justify-between w-[45%] mb-1 text-[#9c38ff] md:mb-2">
 
             <motion.div
-               animate={{ x: [-100, 0], opacity: [0, 0.2, 0.5, 0.7, 1], scale: 1 }}
+               animate={{ x: [-100, 0], opacity: [0.5, 1], scale: 1 }}
                transition={{
-               duration: 1,
+               duration: 1.5,
                delay: 0.5,
                }}
-              initial={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0.2, scale: 0 }}
             >
-              <FiGithub className='text-[16px] md:text-[18px]' />
+              <a href="https://github.com/Tobiloba007?tab=repositories" target="_blank" rel="noreferrer">
+                <FiGithub className='text-[16px] md:text-[18px]' />
+              </a>
             </motion.div>
 
             <motion.div
               animate={{ x: [-400, 0], opacity: [0.5, 1], scale: 1 }}
               transition={{
-              duration: 1,
-              delay: 1.5,
+              duration: 1.5,
+              delay: 1,
               }}
              initial={{ opacity: 0.2, scale: 0 }}
             >
-              <SlSocialLinkedin className='text-[16px] md:text-[18px]' />
+              <a href="https://www.linkedin.com/in/michael-olaniyan-bb1359200/" target="_blank" rel="noreferrer">
+                <SlSocialLinkedin className='text-[16px] md:text-[18px]' />
+              </a>
             </motion.div>
             
             <motion.div
               animate={{ x: [-400, 0], opacity: [0.5, 1], scale: 1 }}
               transition={{
-              duration: 1,
-              delay: 2.5,
+              duration: 1.5,
+              delay: 1.5,
               }}
              initial={{ opacity: 0.2, scale: 0 }}
             >
-              <RiTwitterLine className='text-[18px] md:text-[20px]' />
+              <a href="https://twitter.com/ipiss_chanpagne" target="_blank" rel="noreferrer">
+                <RiTwitterLine className='text-[18px] md:text-[20px]' />
+              </a>
             </motion.div>
 
             <motion.div
               animate={{ x: [-400, 0], opacity: [0.5, 1], scale: 1 }}
               transition={{
-              duration: 1,
-              delay: 3.5,
+              duration: 1.5,
+              delay: 2,
               }}
              initial={{ opacity: 0.2, scale: 0 }}
             >
-              <FaInstagram className='text-[18px] md:text-[20px]' />
+              <a href="https://api.whatsapp.com/send/?phone=09090529118&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
+                <FaWhatsapp className='text-[18px] md:text-[20px]' />
+              </a>
             </motion.div>
 
           </div>

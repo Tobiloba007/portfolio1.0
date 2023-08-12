@@ -1,10 +1,11 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react"
-import { FaInstagram } from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa"
 import { FiGithub } from "react-icons/fi"
 import { RiTwitterLine } from "react-icons/ri"
 import { SlSocialLinkedin } from "react-icons/sl"
+import logo from '../assets/myLogo.png'
 
 
 const Contacts = () => {
@@ -27,20 +28,32 @@ const Contacts = () => {
                 Have any questions, need help with an exciting project, or you need an awesome developer on your team ?<br />
                 send me an <a className="text-[#74aabc] ml-1" href="#">Email.</a>
             </p>
-            <button className="h-14 w-32 border-[1px] border-[#74aabc] text-[#C4C4C4] rounded-md mt-8 xl:w-36">
-                Say Hello
-            </button>
+            <a href="mailto:Olaniyanmichael0@gmail.com?subject=" target="_blank" rel="noreferrer">
+                <button className="h-14 w-32 border-[1px] border-[#74aabc] text-[#C4C4C4] rounded-md mt-8 xl:w-36">
+                    Say Hello
+                </button>
+            </a>
         </div>
 
-        <div className="flex items-center justify-between w-full mt-20 mb-12 md:hidden">
-            <FiGithub className='text-[20px] xl:text-[20px]' />
-            <SlSocialLinkedin className='text-[20px] xl:text-[20px]' />
-            <RiTwitterLine className='text-[22px] xl:text-[22px]' />
-            <FaInstagram className='text-[22px] xl:text-[22px]' />
+        <div className="flex items-center justify-between w-full mt-20 mb-8 md:hidden">
+            <a href="https://github.com/Tobiloba007?tab=repositories" target="_blank" rel="noreferrer">
+              <FiGithub className='text-[20px] xl:text-[20px]' />
+            </a>
+            <a href="https://www.linkedin.com/in/michael-olaniyan-bb1359200/" target="_blank" rel="noreferrer">
+              <SlSocialLinkedin className='text-[20px] xl:text-[20px]' />
+            </a>
+            <a href="https://twitter.com/ipiss_chanpagne" target="_blank" rel="noreferrer">
+              <RiTwitterLine className='text-[22px] xl:text-[22px]' />
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=09090529118&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
+              <FaWhatsapp className='text-[22px] xl:text-[22px]' />
+            </a>
         </div>
 
-        <div className="flex items-center justify-center w-full mb-2 md:mt-20 lg:mb-3 xl:mb-5 ">
-            <p className="text-xs font-light text-[#a452f7] xl:text-sm">
+        <div className="flex flex-col items-center justify-center w-full mb-2 md:mt-20 lg:mb-3 xl:mb-5 ">
+          <img className="w-16 mb-1 lg:w-20 lg:mb-3 xl:w-24"
+          src={logo} alt="Michawl's Logo" />
+            <p className="text-xs font-light text-[#74aabc] xl:text-sm">
                 Handcrafted by me © 2023
             </p>
         </div>

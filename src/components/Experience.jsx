@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import { IoLocationSharp } from 'react-icons/io5'
-import logo from '../assets/companyLogo.png'
+import blueprint from '../assets/blueprint.png'
+import logo from '../assets/fiverr.jpeg'
 
 const Experience = () => {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -9,24 +10,27 @@ const Experience = () => {
   const items = [
     {
       id: 1,
-      title: 'Lorem ipsum dolor sit amet Amet',
-      logo: logo,
+      title: 'Blueprints pathway',
+      date: '2022 - Present',
+      logo: blueprint,
       location: 'Lekki, Lagos',
-      details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veniam, aspernatur atque porro aliquam ipsam!',
+      details: 'Collaborated closely with designers and back-end developers to create visually stunning and functional user interfaces. while ensuring cross-browser-compatibility and optimized website performance for a seamless user experience.',
     },
     {
       id: 2,
-      title: 'Lorem ipsum dolor sit amet Amet',
+      title: 'UMscope Frontend internship',
+      date: '2021 - 2022',
       logo: logo,
       location: 'Lekki, Lagos',
-      details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veniam, aspernatur atque porro aliquam ipsam!',
+      details: 'Worked with senior developers to implement responsive designs, Gained hands-on experience with different frontend development technologies.',
     },
     {
       id: 3,
-      title: 'Lorem ipsum dolor sit amet Amet',
+      title: 'Fiverr & Upwork',
+      date: '',
       logo: logo,
       location: 'Lekki, Lagos',
-      details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veniam, aspernatur atque porro aliquam ipsam!',
+      details: 'Collaborated with the client to understand their design preferences and project requirements. Delivered projects on time and within budget, leading to a successful launch.',
     },
   ]
 
@@ -55,7 +59,7 @@ const Experience = () => {
                </p>
                <div className='flex items-center justify-between'>
                  <p className='hidden text-white text-sm text font-semibold md:flex md:text-base md:pr-8'>
-                  2022 - 2023
+                   {item.date}
                  </p>
                  {
                   open
@@ -70,15 +74,15 @@ const Experience = () => {
 
              {isExpanded == item.id && (
                <div className='flex flex-col items-start justify-center w-full bg-[#3d4f55] px-5 py-6 rounded-md mt-5 md:px-8 xl:px-12'>
-                <img className='w-24' src={logo} alt="..." />
+                <img className='w-24 my-8' src={item.logo} alt="..." />
                 <div className='flex items-center justify-start w-full'>
                   <IoLocationSharp className='text-[#ae63f9] text-2xl' />
                   <p className='pl-1 text-sm text-[#C4C4C4] md:text-base'>
                     Lekki, Lagos
                   </p>
                 </div>
-                <p className='text-sm pt-2 pr-8 leading-6 md:text-base md:pr-0 md:w-[95%] xl:leading-7 xl:text-[17px]'>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint non, quos minus pariatur ratione dolorum nemo voluptates fuga, sed quas aliquid explicabo necessitatibus at quo.
+                <p className='text-sm pt-2 leading-6 md:text-base md:pr-4 md:w-[95%] lg:w-[85%] xl:leading-7 xl:text-[17px] xl:w-[95%]'>
+                    {item.details}
                 </p>
                </div>
               )

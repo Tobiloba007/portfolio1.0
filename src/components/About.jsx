@@ -15,6 +15,9 @@ const About = () => {
             skill: 'JAVASCRIPT'
         },
         {
+            skill: 'TYPESCRIPT'
+        },
+        {
             skill: 'ANIMATIONS'
         },
         {
@@ -26,12 +29,15 @@ const About = () => {
         {
             skill: 'TAILWIND CSS'
         },
+        {
+            skill: 'AXIOS/FETCH API'
+        },
     ]
 
   return (
     <div className="flex flex-col items-start justify-center w-full mt-28 px-8 md:px-14 md:mt-40 lg:flex-row lg:px-24 
-    lg:items-start lg:justify-between xl:px-52 xl:mt-72">
-        <div className="flex flex-col items-start justify-center w-full lg:w-[50%]">
+    lg:items-center lg:justify-between xl:px-52 xl:mt-72">
+        <div className="flex flex-col items-start justify-center w-full lg:w-[55%]">
             <div className="flex items-center justify-start w-full mb-5 md:w-[60%] lg:w-full">
                <p className="text-[15px] mt-1 md:mt-2 md:text-[19px] lg:text-[20px] xl:mt-1">
                    01.
@@ -41,16 +47,23 @@ const About = () => {
                </p>
                <hr className="border-[0.01em] border-[#3d3b4b] w-full ml-2" />
             </div>
-            <div className='md:w-[90%]'>
-                <p className="text-[15px] font-normal leading-6 mb-3 text-[#C4C4C4] md:text-[16px] lg:text-[16px] xl:text-[19px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deleniti rerum veniam repellendus earum.
+            <div className='md:w-[90%] lg:-[100%]'>
+                <p className="text-[13px] font-normal leading-5 mb-2 text-[#C4C4C4] md:text-[16px] md:leading-6 lg:text-[16px] lg:font-light xl:text-[18px] xl:leading-8">
+                    My name is Michael Olaniyan, i am a Frontend Engineer. I thrive on the perfect blend of creativity and logic that front-end development demands. 
                 </p>
 
-                <p className="text-[15px] font-normal leading-6 mb-3 text-[#C4C4C4] md:text-[16px] lg:text-[16px] xl:text-[19px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore inventore ipsum quam consectetur in eos tenetur placeat, quo nemo, ullam architecto.
+                <p className="text-[13px] font-normal leading-5 mb-2 text-[#C4C4C4] md:text-[16px] md:leading-6 lg:text-[16px] lg:font-light xl:text-[18px] xl:leading-8">
+                     &quot;I find joy in every step of the process&quot;, The challenge of making websites not just functional, but also beautiful and
+                     user-friendly, is what fuels my dedication to this craft.
                 </p>
-                <p className="text-[15px] font-normal leading-6 mb-3 text-[#C4C4C4] md:text-[16px] lg:text-[16px] xl:text-[19px]">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum in nam odio id quam tempore.
+
+                <p className="text-[13px] font-normal leading-5 mb-2 text-[#C4C4C4] md:text-[16px] md:leading-6 lg:text-[16px] lg:font-light xl:text-[18px] xl:leading-8">
+                     I prioritize collaboration and communication. Understanding my client&apos;s vision and the end-users needs 
+                     allows me to create solutions that resonates. 
+                </p>
+
+                <p className="text-[13px] font-normal leading-5 mb-2 text-[#C4C4C4] md:text-[16px] md:leading-6 lg:text-[16px] lg:font-light xl:text-[18px] xl:leading-8">
+                     While coding keeps me engaged, I also have a soft spot for designs and i love listening to good music. 
                 </p>
             </div>
         </div>
@@ -64,9 +77,9 @@ const About = () => {
             <div className="flex flex-wrap items-start justify-between w-full">
                 {items.map((item)=>{
                     return(
-                <div key={item.index} className="flex items-center justify-start w-[40%] mb-5">
+                <div key={item.index} className="flex items-center justify-start w-[40%] mb-8">
                     <BiSolidRightArrow className='text-[#74aabc] text-[12px]' />
-                    <p className="text-[12px] text-[#C4C4C4] ml-2 whitespace-nowrap xl:text-[16px]">
+                    <p className="text-[12px] text-[#C4C4C4] ml-2 whitespace-nowrap lg:text-[13px] xl:text-[16px]">
                         {item.skill}
                     </p>
                 </div>

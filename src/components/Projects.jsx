@@ -36,8 +36,8 @@ const Projects = () => {
             proLogo: alphaLogo,
             proLogoStyle: 'absolute h-56 w-[100%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#c5c3c3] rounded-[20px]',
-            proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: '#',
+            proIntro: 'An international cyber secutity, DevOps and Data solutions company.',
+            proLink: 'https://alpha-x-tobiloba007.vercel.app/',
             aos: 'fade-right',
             offset: "100", 
             easing: "ease-in-sine",
@@ -49,7 +49,7 @@ const Projects = () => {
             proLogo: chinaLogo,
             proLogoStyle: 'absolute h-56 w-[75%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#1d1d4e] rounded-[20px]',
-            proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
+            proIntro: 'Procurement agency dedicated to providing seamless logistics solutions tailored to meet your needs.',
             proLink: 'https://www.chinadojo.org/',
             aos: 'fade-left',
             offset: "150", 
@@ -62,8 +62,8 @@ const Projects = () => {
             proLogo: padiLogo,
             proLogoStyle: 'absolute h-56 w-[60%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#4c4429] rounded-[20px]',
-            proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
-            proLink: 'https://www.padicash.io/',
+            proIntro: 'Experience a super comfortable financial lifestyle that supports your daily habits.',
+            proLink: 'https://padicash.io/',
             aos: 'fade-right',
             offset: "100", 
             easing: "ease-in-sine",
@@ -75,7 +75,7 @@ const Projects = () => {
             proLogo: bwecLogo,
             proLogoStyle: 'absolute h-56 w-[70%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#182862] rounded-[20px]',
-            proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
+            proIntro: 'learning opportunities to individuals and people in marginalized black communities.',
             proLink: 'https://www.bloomingwells.org/',
             aos: 'fade-left',
             offset: "150", 
@@ -88,7 +88,7 @@ const Projects = () => {
             proLogo: whatsappLogo,
             proLogoStyle: 'absolute h-56 w-[45%] object-contain rounded-[21.5px]',
             proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#294522] rounded-[20px]',
-            proIntro: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni sit nulla iusto laboriosam in fugiat',
+            proIntro: 'An exploration of design with an idea around user experience and accessibility.',
             proLink: 'https://whatsapp-tobiloba007.vercel.app/',
             aos: 'fade-right',
             offset: "100", 
@@ -173,8 +173,9 @@ const Projects = () => {
             <p className='text-sm text-[#74aabc] md:text-base xl:text-lg'>
                 want to see more?
             </p>
-             <a className='text-sm underline underline-offset-2 pl-1 md:text-base md:pl-2 xl:text-lg'
-                href="#"> Email me.</a>
+             <a  href="mailto:Olaniyanmichael0@gmail.com?subject=" target="_blank" rel="noreferrer"
+             className='text-sm underline underline-offset-2 pl-1 md:text-base md:pl-2 xl:text-lg'
+                > Email me.</a>
         </div>
 
     </div>
