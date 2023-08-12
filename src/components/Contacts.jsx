@@ -14,7 +14,7 @@ const Contacts = () => {
       }, []);
 
   return (
-    <div data-aos="zoom-in" data-aos-duration="1000" className="flex flex-col items-center justify-center w-full px-8 mt-24 md:px-14 md:mt-36 xl:mt-72">
+    <div data-aos="zoom-in" data-aos-duration="2500" className="flex flex-col items-center justify-center w-full px-8 mt-24 md:px-14 md:mt-36 xl:mt-72">
         <div className="flex flex-col items-center justify-start w-full">
             <p className="text-sm font-light text-[#C4C4C4] lg:text-base xl:text-lg">
                 05. What&apos;s next?

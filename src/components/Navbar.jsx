@@ -43,13 +43,13 @@ const Navbar = () => {
         { 
         drawer      
         ?<motion.div 
-        animate={{ x: [330, 0], opacity: 1, scale: 1 }}
-        transition={{
+          animate={{ x: [330, 0], opacity: 1, scale: 1 }}
+          transition={{
           duration: 0.7,
-          delay: 0.3,
-      }}
-      initial={{ opacity: 1, scale: 1 }}
-        className='fixed top-0 flex justify-end w-full h-[100vh] z-20 backdrop-blur-sm lg:hidden'>
+          delay: 0,
+          }}
+          initial={{ opacity: 1, scale: 1 }}
+         className='fixed top-0 flex justify-end w-full h-[100vh] z-20 backdrop-blur-sm lg:hidden'>
 
             <div className='flex flex-col items-center justify-center w-[75%] pt-7 bg-[#10101A] shadow-2xl shadow-[#323232] md:w-[50%] md:pt-24'>
                <a href='#about' onClick={handleDrawer}

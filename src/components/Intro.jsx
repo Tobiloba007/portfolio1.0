@@ -2,15 +2,9 @@ import { FiGithub } from 'react-icons/fi'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { RiTwitterLine } from 'react-icons/ri'
 import { FaInstagram } from 'react-icons/fa'
-import { useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { motion } from 'framer-motion'
 
 const Intro = () => {
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
 
   return (
     <div className="poppins flex flex-col items-start justify-end w-full px-8 mt-56 md:px-14 md:w-[85%] lg:w-full lg:px-24 lg:mt-36 xl:px-52 xl:mt-32">
@@ -31,10 +25,51 @@ const Intro = () => {
 
         <div className="w-full mt-12 lg:hidden">
           <div className="flex items-start justify-between w-[45%] mb-1 text-[#9c38ff] md:mb-2">
-            <FiGithub className='text-[16px] md:text-[18px]' />
-            <SlSocialLinkedin className='text-[16px] md:text-[18px]' />
-            <RiTwitterLine className='text-[18px] md:text-[20px]' />
-            <FaInstagram className='text-[18px] md:text-[20px]' />
+
+            <motion.div
+               animate={{ x: [-100, 0], opacity: [0, 0.2, 0.5, 0.7, 1], scale: 1 }}
+               transition={{
+               duration: 1,
+               delay: 0.5,
+               }}
+              initial={{ opacity: 1, scale: 1 }}
+            >
+              <FiGithub className='text-[16px] md:text-[18px]' />
+            </motion.div>
+
+            <motion.div
+              animate={{ x: [-400, 0], opacity: [0.5, 1], scale: 1 }}
+              transition={{
+              duration: 1,
+              delay: 1.5,
+              }}
+             initial={{ opacity: 0.2, scale: 0 }}
+            >
+              <SlSocialLinkedin className='text-[16px] md:text-[18px]' />
+            </motion.div>
+            
+            <motion.div
+              animate={{ x: [-400, 0], opacity: [0.5, 1], scale: 1 }}
+              transition={{
+              duration: 1,
+              delay: 2.5,
+              }}
+             initial={{ opacity: 0.2, scale: 0 }}
+            >
+              <RiTwitterLine className='text-[18px] md:text-[20px]' />
+            </motion.div>
+
+            <motion.div
+              animate={{ x: [-400, 0], opacity: [0.5, 1], scale: 1 }}
+              transition={{
+              duration: 1,
+              delay: 3.5,
+              }}
+             initial={{ opacity: 0.2, scale: 0 }}
+            >
+              <FaInstagram className='text-[18px] md:text-[20px]' />
+            </motion.div>
+
           </div>
           <hr className='border-[0.01em] border-[#3d3b4b] w-[48%]' />
         </div>

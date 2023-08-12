@@ -40,7 +40,8 @@ const Projects = () => {
             proLink: '#',
             aos: 'fade-right',
             offset: "100", 
-            easing: "ease-in-sine"
+            easing: "ease-in-sine",
+            duration: "2000"
         },
         {
             id: 2,
@@ -52,7 +53,8 @@ const Projects = () => {
             proLink: 'https://www.chinadojo.org/',
             aos: 'fade-left',
             offset: "150", 
-            easing: "ease-in-sine"
+            easing: "ease-in-sine",
+            duration: "2000"
         },
         {
             id: 3,
@@ -64,7 +66,8 @@ const Projects = () => {
             proLink: 'https://www.padicash.io/',
             aos: 'fade-right',
             offset: "100", 
-            easing: "ease-in-sine"
+            easing: "ease-in-sine",
+            duration: "2000"
         },
         {
             id: 4,
@@ -76,7 +79,8 @@ const Projects = () => {
             proLink: 'https://www.bloomingwells.org/',
             aos: 'fade-left',
             offset: "150", 
-            easing: "ease-in-sine"
+            easing: "ease-in-sine",
+            duration: "2000"
         },
         {
             id: 5,
@@ -88,7 +92,8 @@ const Projects = () => {
             proLink: 'https://whatsapp-tobiloba007.vercel.app/',
             aos: 'fade-right',
             offset: "100", 
-            easing: "ease-in-sine"
+            easing: "ease-in-sine",
+            duration: "2000"
         },
     ]
 
@@ -118,6 +123,7 @@ const Projects = () => {
                     data-aos= {item.aos}
                     data-aos-offset={item.offset}
                     data-aos-easing={item.easing}
+                    data-aos-duration={item.duration}
                     onMouseEnter={() => handleHoverEnter(item.id)}
                     onMouseLeave={handleHoverLeave}
                     >
