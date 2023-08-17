@@ -32,12 +32,12 @@ const Projects = () => {
     const items = [
         {
             id: 1,
-            proImg: alphaImg,
-            proLogo: alphaLogo,
-            proLogoStyle: 'absolute h-56 w-[100%] object-contain rounded-[21.5px]',
-            proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#c5c3c3] rounded-[20px]',
-            proIntro: 'An international cyber secutity, DevOps and Data solutions company.',
-            proLink: 'https://alpha-x-tobiloba007.vercel.app/',
+            proImg: padiImg,
+            proLogo: padiLogo,
+            proLogoStyle: 'absolute h-56 w-[60%] object-contain rounded-[21.5px]',
+            proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#4c4429] rounded-[20px]',
+            proIntro: 'Experience a super comfortable financial lifestyle that supports your daily habits.',
+            proLink: 'https://padicash.io/',
             aos: 'fade-right',
             offset: "100", 
             easing: "ease-in-sine",
@@ -58,19 +58,6 @@ const Projects = () => {
         },
         {
             id: 3,
-            proImg: padiImg,
-            proLogo: padiLogo,
-            proLogoStyle: 'absolute h-56 w-[60%] object-contain rounded-[21.5px]',
-            proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#4c4429] rounded-[20px]',
-            proIntro: 'Experience a super comfortable financial lifestyle that supports your daily habits.',
-            proLink: 'https://padicash.io/',
-            aos: 'fade-right',
-            offset: "100", 
-            easing: "ease-in-sine",
-            duration: "2000"
-        },
-        {
-            id: 4,
             proImg: bwecImg,
             proLogo: bwecLogo,
             proLogoStyle: 'absolute h-56 w-[70%] object-contain rounded-[21.5px]',
@@ -79,6 +66,19 @@ const Projects = () => {
             proLink: 'https://www.bloomingwells.org/',
             aos: 'fade-left',
             offset: "150", 
+            easing: "ease-in-sine",
+            duration: "2000"
+        },
+        {
+            id: 4,
+            proImg: alphaImg,
+            proLogo: alphaLogo,
+            proLogoStyle: 'absolute h-56 w-[100%] object-contain rounded-[21.5px]',
+            proBackground: 'absolute flex items-center justify-center w-full opacity-[0.8] h-full bg-[#c5c3c3] rounded-[20px]',
+            proIntro: 'An international cyber secutity, DevOps and Data solutions company.',
+            proLink: 'https://alpha-x-tobiloba007.vercel.app/',
+            aos: 'fade-right',
+            offset: "100", 
             easing: "ease-in-sine",
             duration: "2000"
         },

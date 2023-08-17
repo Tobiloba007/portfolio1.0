@@ -1,4 +1,5 @@
 import { BiSolidRightArrow } from 'react-icons/bi'
+import resume from "../assets/Michaels-resume.pdf"
 
 const About = () => {
     const items = [
@@ -90,9 +91,9 @@ const About = () => {
         
             </div>
 
-            <p className='text-[13px] font-medium text-[#ba7cf7] underline xl:mt-6'>
+            <a href={resume} download className='text-[13px] font-medium text-[#ba7cf7] underline xl:mt-6'>
                 And a whole lot more
-            </p>
+            </a>
         </div>
     </div>
   )

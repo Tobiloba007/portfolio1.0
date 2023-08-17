@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import { IoLocationSharp } from 'react-icons/io5'
 import blueprint from '../assets/blueprint.png'
+import umscope from '../assets/umscope.jpeg'
 import logo from '../assets/fiverr.jpeg'
 
 const Experience = () => {
@@ -20,7 +21,7 @@ const Experience = () => {
       id: 2,
       title: 'UMscope Frontend internship',
       date: '2021 - 2022',
-      logo: logo,
+      logo: umscope,
       location: 'Lekki, Lagos',
       details: 'Worked with senior developers to implement responsive designs, Gained hands-on experience with different frontend development technologies.',
     },

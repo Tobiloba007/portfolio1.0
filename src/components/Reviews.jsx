@@ -3,43 +3,51 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
 import { GiClubs, GiDiamonds, GiSpades } from 'react-icons/gi'
-import { IoMdHeart } from 'react-icons/io'
-import review1 from '../assets/review1.jpg'
-import review2 from '../assets/review2.jpg'
-import review3 from '../assets/review3.jpg'
-import review4 from '../assets/review4.jpg'
+// import { IoMdHeart } from 'react-icons/io'
+// import review1 from '../assets/review1.jpg'
+import gbolahan from '../assets/gbolahan.jpeg'
+import lex from '../assets/lex.jpeg'
+// import review4 from '../assets/review4.jpg'
+import collins from '../assets/collins.jpeg'
 
 
 const Reviews = () => {
   const items = [
     {
-      image: review1,
-      name: 'Alicia Grants',
-      position: 'project manager, Taurine GC',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi ab soluta ratione sapiente reiciendis hic iste! Praesentium eaque tempore at, velit ab facilis dolorem.',
+      image: gbolahan,
+      name: 'Veracruz Francis',
+      position: 'CEO UMscope',
+      review: "With immaculate ease, Micheal has grown, matured, and exceeded whatever expectations are placed, in front of him. He's got the best can do attitude and always in charge of the game’s front-end development because he is the best at it.",
       cardIcon: <GiSpades className='text-2xl text-[#74aabc] lg:text-3xl xl:text-5xl' />,
     },
     {
-      image: review2,
-      name: 'Leonardo Pipen',
-      position: 'Video Director, Iris studio',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi ab soluta ratione sapiente reiciendis hic iste! Praesentium eaque tempore at, velit ab facilis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae.',
+      image: lex,
+      name: 'Olajuwon Olalekan',
+      position: 'Product Designer at LexCreate',
+      review: "Ensuring developers adhere precisely to your intended design is a frequent challenge, but this isn't the situation with Michal. He faithfully translates my designs without any deviation. Collaborating with him is effortless due to his meticulous focus on the finer points.",
       cardIcon: <GiDiamonds className='text-2xl text-[#74aabc] lg:text-3xl xl:text-5xl' />,
     },
     {
-      image: review3,
-      name: 'Abisola Tinuade',
-      position: 'CEO Trendy wears',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi ab soluta ratione sapiente reiciendis hic iste! Praesentium',
+      image: collins,
+      name: 'Ikedinachim Ugochukwu',
+      position: 'Software Developer | Blueprints pathway',
+      review: "Michael was the best colleague to work with He is highly responsive, organised and strategic with solving problems. i have learnt a lot from him and i am sure he would do well on any team.",
       cardIcon: <GiClubs className='text-2xl text-[#74aabc] lg:text-3xl xl:text-5xl' />,
     },
-    {
-      image: review4,
-      name: 'Emmanuel Cole',
-      position: 'Founder, Blossom kiddies High sch.',
-      review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi ab soluta ratione sapiente reiciendis hic iste! Praesentium eaque tempore at, velit ab facilis dolorem.',
-      cardIcon: <IoMdHeart className='text-2xl text-[#74aabc] lg:text-3xl xl:text-5xl' />,
-    },
+    // {
+    //   image: review4,
+    //   name: 'Emmanuel Cole',
+    //   position: 'Founder, Blossom kiddies High sch.',
+    //   review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi ab soluta ratione sapiente reiciendis hic iste! Praesentium eaque tempore at, velit ab facilis dolorem.',
+    //   cardIcon: <IoMdHeart className='text-2xl text-[#74aabc] lg:text-3xl xl:text-5xl' />,
+    // },
+    // {
+    //   image: collins,
+    //   name: 'Jude Ogunaike',
+    //   position: 'Founder, Blossom kiddies High sch.',
+    //   review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi ab soluta ratione sapiente reiciendis hic iste! Praesentium eaque tempore at, velit ab facilis dolorem.',
+    //   cardIcon: <IoMdHeart className='text-2xl text-[#74aabc] lg:text-3xl xl:text-5xl' />,
+    // },
    
   ] 
   return (
@@ -93,7 +101,7 @@ const Reviews = () => {
               </p>
             </div>
             <div className='flex items-center justify-center w-full xl:px-3'>
-              <p className='text-center text-[#C4C4C4] text-sm font-normal mt-3 px-3 lg:mt-4 lg:leading-6 xl:text-xl xl:leading-9'>
+              <p className='text-center text-[#C4C4C4] text-sm font-normal mt-3 px-3 lg:mt-4 lg:leading-6 xl:text-lg xl:leading-9'>
                 &quot; {item.review} &quot;
               </p>
             </div>

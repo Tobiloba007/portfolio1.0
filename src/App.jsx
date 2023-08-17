@@ -22,11 +22,11 @@ const App = () => {
              <Projects />
            </div>
 
-           <div id="experience">
-             <Experience />
-           </div>
+          <div id="experience">
+            <Experience />
+          </div>
 
-           <Reviews />
+            <Reviews />
 
            <div id="contact"> 
              <Contacts />
