@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins{
+    font-family: Poppins;
+}
+
+.my-mail{
+    writing-mode: vertical-lr;
+}
+
+
+.container {
+    width: 125px; /* Set the desired width of the container */
+    overflow: hidden;
+  }
+  
+  .scrolling-text {
+    white-space: nowrap; /* Prevent the text from wrapping */
+    animation: scroll-left 25s infinite; /* Define the animation */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(-100%); /* Start position */
+    }
+    25% {
+      transform: translateX(0); /* End position (completely shifted to the left) */
+    }
+    50% {
+      transform: translateX(0); /* End position (completely shifted to the left) */
+    }
+    75% {
+      transform: translateX(-100%); /* End position (completely shifted to the left) */
+    }
+    100% {
+      transform: translateX(0); /* End position (completely shifted to the left) */
+    }
+
+  }
+  
