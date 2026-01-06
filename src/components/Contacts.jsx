@@ -36,7 +36,7 @@ const Contacts = () => {
         </div>
 
         <div className="flex items-center justify-between w-full mt-20 mb-8 md:hidden">
-            <a href="https://github.com/Tobiloba007" target="_blank" rel="noreferrer">
+            <a href="https://https://gitlab.com/olaniyan" target="_blank" rel="noreferrer">
               <FiGithub className='text-[20px] xl:text-[20px]' />
             </a>
             <a href="https://www.linkedin.com/in/michael-olaniyan-213662344/" target="_blank" rel="noreferrer">

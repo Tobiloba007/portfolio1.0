@@ -27,7 +27,7 @@ const Home = ({children}) => {
              initial={{ opacity: 1, scale: 1 }}
            className="hidden md:flex fixed bottom-0 left-7 lg:left-12 xl:left-16 flex-col items-start justify-end">
               <div className="flex flex-col items-center justify-end w-full text-[#C4C4C4]">
-                 <a href="https://github.com/Tobiloba007" target="_blank" rel="noreferrer">
+                 <a href="https://gitlab.com/olaniyan" target="_blank" rel="noreferrer">
                     <FiGithub className='text-[16px] my-2 xl:text-[20px] xl:my-3' />
                  </a>
                  <a href="https://www.linkedin.com/in/michael-olaniyan-213662344/" target="_blank" rel="noreferrer">
